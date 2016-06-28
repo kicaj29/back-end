@@ -12,7 +12,7 @@ namespace BootstrapMicroServices
         static void Main(string[] args)
         {
             Console.WriteLine("Bootstrap started");
-            for(var port = 1025; port < 1075; port++)
+            for(var port = 10025; port < 10035; port++)
             {
                 Process.Start("ExeOverheadVerification.exe", port.ToString());
             }

@@ -12,6 +12,7 @@ namespace ExeOverheadVerification
         static void Main(string[] args)
         {
             string tmp = string.Format("http://localhost:{0}/", args[0]);
+            //string tmp = string.Format("http://localhost:{0}/", 10025);
 
             Console.WriteLine("Service started " + tmp);
 
@@ -21,10 +22,9 @@ namespace ExeOverheadVerification
             Console.WriteLine("Listening..");
             web.Start();
 
-            Console.WriteLine(web.GetContext());
             var context = web.GetContext();
             var response = context.Response;
-            const string responseString = "<html><body>Hello world</body></html>";
+            string responseString = string.Format("<html><body>Hello world from port {0}</body></html>", args[0]);
             var buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
             response.ContentLength64 = buffer.Length;
             var output = response.OutputStream;
