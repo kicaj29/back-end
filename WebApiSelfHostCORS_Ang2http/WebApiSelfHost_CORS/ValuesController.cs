@@ -18,9 +18,12 @@ namespace WebApiSelfHost_CORS
         //}
 
         // GET api/values 
-        public IEnumerable<string> Get()
+        public IEnumerable<Customer> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new Customer[] {
+                new Customer() { Id = 1, Name = "Jacek" },
+                new Customer() { Id = 2, Name = "Placek"}
+            };
         }
 
         // GET api/values/5 

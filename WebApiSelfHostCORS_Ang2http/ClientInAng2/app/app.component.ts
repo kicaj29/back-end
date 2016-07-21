@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
 import './rxjs-operators';
+import {Customer} from 'Customer';
 
 @Component({
   selector: 'my-app',
@@ -24,8 +25,11 @@ export class AppComponent {
         this.http.get('http://localhost:9000/api/values')
             .map(this.extractData)
             .catch(this.handleError)
-            .subscribe((httpRes: Response) => {
-                console.log(httpRes.toString());
+            .subscribe((customers: Array<Customer>) => {
+                for (let item of customers) {
+                    console.log("Id: " + item.Id + " Name: " + item.Name);
+                }
+                //console.log(JSON.stringify(httpRes));
             });
 
         let name = "some value";
@@ -38,16 +42,15 @@ export class AppComponent {
             .catch(this.handleError)
             .subscribe((httpRes: Response) => {
                 if (httpRes != null) {
-                    console.log(httpRes.toString());
+                    console.log(JSON.stringify(httpRes));
+
                 }
             });
     }
 
     private extractData(res: Response) {
         if (res.statusText != "No Content") {
-
-            let body = res.json();
-            return body;
+            return res.json();
         }
         else {
             return null;
