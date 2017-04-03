@@ -335,7 +335,7 @@ public partial class Item : TBase
 
   public void Read (TProtocol iprot)
   {
-    iprot.IncrementRecursionDepth();
+    //iprot.IncrementRecursionDepth();
     try
     {
       TField field;
@@ -498,12 +498,12 @@ public partial class Item : TBase
     }
     finally
     {
-      iprot.DecrementRecursionDepth();
+      //iprot.DecrementRecursionDepth();
     }
   }
 
   public void Write(TProtocol oprot) {
-    oprot.IncrementRecursionDepth();
+    //oprot.IncrementRecursionDepth();
     try
     {
       TStruct struc = new TStruct("Item");
@@ -674,7 +674,7 @@ public partial class Item : TBase
     }
     finally
     {
-      oprot.DecrementRecursionDepth();
+      //oprot.DecrementRecursionDepth();
     }
   }
 

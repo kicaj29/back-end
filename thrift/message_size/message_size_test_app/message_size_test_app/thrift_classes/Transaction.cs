@@ -50,7 +50,7 @@ public partial class Transaction : TBase
 
   public void Read (TProtocol iprot)
   {
-    iprot.IncrementRecursionDepth();
+    //iprot.IncrementRecursionDepth();
     try
     {
       TField field;
@@ -91,12 +91,12 @@ public partial class Transaction : TBase
     }
     finally
     {
-      iprot.DecrementRecursionDepth();
+      //iprot.DecrementRecursionDepth();
     }
   }
 
   public void Write(TProtocol oprot) {
-    oprot.IncrementRecursionDepth();
+    //oprot.IncrementRecursionDepth();
     try
     {
       TStruct struc = new TStruct("Transaction");
@@ -122,7 +122,7 @@ public partial class Transaction : TBase
     }
     finally
     {
-      oprot.DecrementRecursionDepth();
+      //oprot.DecrementRecursionDepth();
     }
   }
 
