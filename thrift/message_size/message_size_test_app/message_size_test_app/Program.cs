@@ -48,6 +48,13 @@ namespace message_size_test_app
             t.Write(tProtocol);
 
             byte[] content = stream.ToArray();
+
+
+            var stream1 = new MemoryStream(content);
+            TProtocol tProtocol1 = new TBinaryProtocol(new TStreamTransport(stream1, stream1));
+
+            Transaction t1 = new Transaction();
+            t1.Read(tProtocol1);
         }
     }
 }
