@@ -29,7 +29,7 @@ namespace EF6_CodeFirst
             }
 
 
-            //2. The migrations are run even we do not the context. Seems that this approach fits better to installers.
+            //2. The migrations are run even we do not run the context. Seems that this approach fits better to installers.
             //var configuration = new Migrations.Configuration();
             //var migrator = new DbMigrator(configuration);
             //migrator.Update();
