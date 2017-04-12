@@ -38,6 +38,9 @@ Add-Migration AddBlogUrl
    We cannot use existing DB because migration 201704121034137_AddPostClass was executed already in step 7.
 
 9. Data Motion / Custom SQL - add new field to Post class and add custom SQL. Generate and execute migration.
+
+10. Generate sql script, run in PM console: Update-Database -Script -SourceMigration: $InitialDatabase -TargetMigration: AddPostAbstract
+	This command will generate sql script that will be automatically open in VS.
    
 
 
