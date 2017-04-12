@@ -31,3 +31,5 @@ Add-Migration AddBlogUrl
 
 6. Again execute migrations from C# level.
 
+7. Add new class Post, extend class Blog, generate new migrations and execute them.
+
