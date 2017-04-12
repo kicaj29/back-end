@@ -18,9 +18,10 @@ namespace EF6_CodeFirst.Migrations
                     })
                 .PrimaryKey(t => t.PostId)
                 .ForeignKey("dbo.Blogs", t => t.BlogId, cascadeDelete: true)
-                .Index(t => t.BlogId);
-            
-            AddColumn("dbo.Blogs", "Rating", c => c.Int(nullable: false));
+                .Index(t => t.BlogId)
+                .Index(p => p.Title, unique: true);
+
+            AddColumn("dbo.Blogs", "Rating", c => c.Int(nullable: false, defaultValue: 3));
         }
         
         public override void Down()

@@ -33,3 +33,9 @@ Add-Migration AddBlogUrl
 
 7. Add new class Post, extend class Blog, generate new migrations and execute them.
 
+8. Now we want introduce manual changes in 201704121034137_AddPostClass.cs.
+   So introduce the changes, delete db and execute all migrations once again.
+   We cannot use existing DB because migration 201704121034137_AddPostClass was executed already in step 7.
+   
+
+
