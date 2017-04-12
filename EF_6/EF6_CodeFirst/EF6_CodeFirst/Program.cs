@@ -10,7 +10,7 @@ namespace EF6_CodeFirst
     {
         static void Main(string[] args)
         {
-            using (var db = new BloggingContext("Data Source=W7-PLKTW0206;Initial Catalog=testdb;Integrated Security=True"))
+            using (var db = new BloggingContext())
             {
                 var blog = new Blog() { Name = "My Blog" };
                 db.Blogs.Add(blog);

@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Common;
+using System.Diagnostics;
 
 namespace EF6_CodeFirst
 {
     public class BloggingContext : DbContext
     {
-        public BloggingContext(string connString):base(connString)
+        public BloggingContext() : base()
         { }
 
         public DbSet<Blog> Blogs { get; set; }
-        public DbSet<Post> Posts { get; set; }
     }
 }

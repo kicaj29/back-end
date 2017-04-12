@@ -10,7 +10,5 @@ namespace EF6_CodeFirst
     {
         public int BlogId { get; set; }
         public string Name { get; set; }
-
-        public virtual List<Post> Posts { get; set; }
     }
 }
