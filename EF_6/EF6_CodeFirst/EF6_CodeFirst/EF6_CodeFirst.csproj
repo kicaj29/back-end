@@ -66,6 +66,10 @@
     <Compile Include="Migrations\201704121034137_AddPostClass.Designer.cs">
       <DependentUpon>201704121034137_AddPostClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704121054509_AddPostAbstract.cs" />
+    <Compile Include="Migrations\201704121054509_AddPostAbstract.Designer.cs">
+      <DependentUpon>201704121054509_AddPostAbstract.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704121034137_AddPostClass.resx">
       <DependentUpon>201704121034137_AddPostClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704121054509_AddPostAbstract.resx">
+      <DependentUpon>201704121054509_AddPostAbstract.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

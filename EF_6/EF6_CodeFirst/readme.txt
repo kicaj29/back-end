@@ -1,8 +1,8 @@
 https://msdn.microsoft.com/en-us/library/jj193542(v=vs.113).aspx
 
-https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx
-
 https://msdn.microsoft.com/en-us/library/dn579398(v=vs.113).aspx
+
+https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx (SCENARIO 1 is mostly based on this article)
 
 SCENARIO 1 Migrations without connecting to DB.
 
@@ -36,6 +36,8 @@ Add-Migration AddBlogUrl
 8. Now we want introduce manual changes in 201704121034137_AddPostClass.cs.
    So introduce the changes, delete db and execute all migrations once again.
    We cannot use existing DB because migration 201704121034137_AddPostClass was executed already in step 7.
+
+9. Data Motion / Custom SQL - add new field to Post class and add custom SQL. Generate and execute migration.
    
 
 
