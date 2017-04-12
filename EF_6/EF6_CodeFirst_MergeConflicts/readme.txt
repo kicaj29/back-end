@@ -1,0 +1,1 @@
+https://msdn.microsoft.com/en-us/library/dn481501(v=vs.113).aspx
