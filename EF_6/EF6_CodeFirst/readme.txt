@@ -2,6 +2,8 @@ https://msdn.microsoft.com/en-us/library/jj193542(v=vs.113).aspx
 
 https://msdn.microsoft.com/en-us/library/dn579398(v=vs.113).aspx
 
+https://msdn.microsoft.com/en-us/library/dn481501(v=vs.113).aspx
+
 https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx (SCENARIO 1 is mostly based on this article)
 
 SCENARIO 1 Migrations without connecting to DB.
