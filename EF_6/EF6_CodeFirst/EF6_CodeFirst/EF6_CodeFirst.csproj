@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Blog.cs" />
     <Compile Include="BloggingContext.cs" />
+    <Compile Include="DecompressDatabaseMigration.cs" />
     <Compile Include="Migrations\201704120750423_InitialCreate.cs" />
     <Compile Include="Migrations\201704120750423_InitialCreate.Designer.cs">
       <DependentUpon>201704120750423_InitialCreate.cs</DependentUpon>

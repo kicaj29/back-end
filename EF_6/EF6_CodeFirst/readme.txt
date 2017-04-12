@@ -4,6 +4,8 @@ https://msdn.microsoft.com/en-us/library/dn579398(v=vs.113).aspx
 
 https://msdn.microsoft.com/en-us/library/dn481501(v=vs.113).aspx
 
+http://tech.trailmax.info/2014/03/inside_of_ef_migrations/ (DecompressDatabaseMigration)
+
 https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx (SCENARIO 1 is mostly based on this article)
 
 SCENARIO 1 Migrations without connecting to DB.
@@ -44,5 +46,6 @@ Add-Migration AddBlogUrl
 10. Generate sql script, run in PM console: Update-Database -Script -SourceMigration: $InitialDatabase -TargetMigration: AddPostAbstract
 	This command will generate sql script that will be automatically open in VS.
    
+11. Use DecompressDatabaseMigration to check what is in column [__MigrationHistory].[Model]
 
 
