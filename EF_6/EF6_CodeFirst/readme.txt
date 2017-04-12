@@ -10,7 +10,24 @@ SCENARIO 1 Migrations without connecting to DB.
 
 2.	In Package Manager Console execute: Enable-Migrations
 This will create folder Migrations but without <timestamp>_InitialCreate.cs file.
-NOTE: if the database would already create then the <timestamp>_InitialCreate.cs would be created!!!
+NOTE: if the database would already exist then the <timestamp>_InitialCreate.cs would be created!!!
 
 3.	In Package Manager Console execute: Add-Migration InitialCreate
 This will create the file without connecting to any database.
+
+4.	Execute InitialCreate from c# level (Program.cs)
+
+				var configuration = new Migrations.Configuration();
+				var migrator = new DbMigrator(configuration);
+				migrator.Update();
+
+If we would like to change model before executing InitialCreate we would get such error after running Add-Migration AddBlogUrl:
+
+Unable to generate an explicit migration because the following explicit migrations are pending: [201704120750423_InitialCreate]. 
+Apply the pending explicit migrations before attempting to generate a new explicit migration.
+
+5.	Now we can add new column in the Blog class and execute in PM console:
+Add-Migration AddBlogUrl
+
+6. Again execute migrations from C# level.
+
