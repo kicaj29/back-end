@@ -58,7 +58,7 @@ namespace EF6_CodeFirst
             decompress.CompressModel(
                 "201704120821095_AddBlogUrl",
                 @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=EF6_CodeFirst.BloggingContext;Integrated Security=True",
-                "Model.xml");
+                "AddBlogUrl.xml");
         }
     }
 }
