@@ -9,6 +9,7 @@
           <Property Name="BlogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NewCol" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="BloggingContext" customannotation:UseClrTypes="true">
           <EntitySet Name="Blogs" EntityType="Self.Blog" />
@@ -24,6 +25,7 @@
                 <ScalarProperty Name="BlogId" ColumnName="BlogId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="NewCol" ColumnName="NewCol" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -39,6 +41,7 @@
           <Property Name="BlogId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
           <Property Name="Url" Type="nvarchar(max)" Nullable="true" />
+          <Property Name="NewCol" Type="nvarchar(max)" Nullable="true" />
         </EntityType>
         <EntityContainer Name="CodeFirstDatabase">
           <EntitySet Name="Blog" EntityType="Self.Blog" Schema="dbo" Table="Blogs" />

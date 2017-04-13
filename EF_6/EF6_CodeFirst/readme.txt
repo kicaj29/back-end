@@ -6,6 +6,8 @@ https://msdn.microsoft.com/en-us/library/dn481501(v=vs.113).aspx
 
 http://tech.trailmax.info/2014/03/inside_of_ef_migrations/ (DecompressDatabaseMigration)
 
+https://www.codemonkeygotsmarts.com/2017/02/12/entity-framework-6-getting-started-with-code-first-migrations/
+
 https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx (SCENARIO 1 is mostly based on this article)
 
 SCENARIO 1 Migrations without connecting to DB.

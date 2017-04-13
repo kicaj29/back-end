@@ -47,8 +47,12 @@ namespace EF6_CodeFirst
         private void button3_Click(object sender, EventArgs e)
         {
             DecompressDatabaseMigration decompress = new DecompressDatabaseMigration();
+            //decompress.DecompressModel(
+            //    "201704120821095_AddBlogUrl",
+            //    @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=EF6_CodeFirst.BloggingContext;Integrated Security=True");
+
             decompress.DecompressModel(
-                "201704120821095_AddBlogUrl",
+                "201704121034137_AddPostClass",
                 @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=EF6_CodeFirst.BloggingContext;Integrated Security=True");
         }
 
@@ -58,7 +62,21 @@ namespace EF6_CodeFirst
             decompress.CompressModel(
                 "201704120821095_AddBlogUrl",
                 @"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=EF6_CodeFirst.BloggingContext;Integrated Security=True",
-                "AddBlogUrl.xml");
+                "AddBlogUrl_NewCol.xml");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var configuration = new Migrations.Configuration();
+            var migrator = new DbMigrator(configuration);
+            migrator.Update("AddBlogUrl");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var configuration = new Migrations.Configuration();
+            var migrator = new DbMigrator(configuration);
+            migrator.Update("AddPostClass");
         }
     }
 }
