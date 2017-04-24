@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver", "Receiver\Receiver.csproj", "{4F3071F7-A8F8-4C29-977F-7CDF73523C32}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "..\Messages\Messages\Messages.csproj", "{0908EEAD-5158-4DC2-B4CB-37CF178901BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{0908EEAD-5158-4DC2-B4CB-37CF178901BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F3071F7-A8F8-4C29-977F-7CDF73523C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F3071F7-A8F8-4C29-977F-7CDF73523C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F3071F7-A8F8-4C29-977F-7CDF73523C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F3071F7-A8F8-4C29-977F-7CDF73523C32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0908EEAD-5158-4DC2-B4CB-37CF178901BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0908EEAD-5158-4DC2-B4CB-37CF178901BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0908EEAD-5158-4DC2-B4CB-37CF178901BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
